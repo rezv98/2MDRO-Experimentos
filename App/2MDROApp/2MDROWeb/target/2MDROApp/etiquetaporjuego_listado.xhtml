@@ -1,0 +1,60 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/templates/principal.xhtml">
+	<ui:define name="primaryTitle">Listado de Etiqueta en Juegos</ui:define>
+	<ui:define name="content">
+		<div class="container">
+			<h:form id="form">
+			<p:messages id="mensaje" showDetail="true" closable="true">
+			        <p:autoUpdate />
+			</p:messages>
+			<p:dataTable value="#{etiquetaporJuegoController.etiquetaporjuegos}" 
+							var="etiquetaporjuego"
+							editable="true">
+				<p:ajax event="rowEdit" listener="#{etiquetaporjuegoController.onRowEdit}" update=":form:mensaje" />
+       			<p:ajax event="rowEditCancel" listener="#{etiquetaporjuegoController.onRowCancel}" update=":form:mensaje" />
+       			
+				<p:column headerText="ID">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{etiquetaporjuego.id}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{etiquetaporjuego.id}" style="width:100%"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				
+				<p:column headerText="Juego">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{etiquetaporjuego.juego.nombre}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{etiquetaporjuego.juego.nombre}" style="width:100%" label="Juego"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				
+				<p:column headerText="Etiqueta">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{etiquetaporjuego.etiqueta.nombre}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{etiquetaporjuego.etiqueta.nombre}" style="width:100%" label="Tienda"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				<p:column headerText="Descripcion">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{etiquetaporjuego}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{etiquetaporjuego.descripcion}" style="width:100%" label="Descripcion"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				<p:column>
+		           <p:rowEditor />
+		       	</p:column>
+		       	<p:column>
+		           <h:commandLink value="Delete" action="#{etiquetaporjuegoController.eliminar(etiquetaporjuego.id)}" />
+		       	</p:column>
+		       
+			</p:dataTable>
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

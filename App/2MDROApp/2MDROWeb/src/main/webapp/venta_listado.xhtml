@@ -1,0 +1,60 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/templates/principal.xhtml">
+	<ui:define name="primaryTitle">Listado de ventas</ui:define>
+	<ui:define name="content">
+		<div class="container">
+			<h:form id="form">
+			<p:messages id="mensaje" showDetail="true" closable="true">
+			        <p:autoUpdate />
+			</p:messages>
+			<p:dataTable value="#{ventaController.ventas}" 
+							var="venta"
+							editable="true">
+				<p:ajax event="rowEdit" listener="#{ventaController.onRowEdit}" update=":form:mensaje" />
+       			<p:ajax event="rowEditCancel" listener="#{ventaController.onRowCancel}" update=":form:mensaje" />
+       			
+				<p:column headerText="ID">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{venta.id}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{venta.id}" style="width:100%"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				
+				<p:column headerText="Juego">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{venta.juego.nombre}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{venta.juego.nombre}" style="width:100%" label="Juego"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				
+				<p:column headerText="Tienda">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{venta.tienda.nombre}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{venta.tienda.nombre}" style="width:100%" label="Tienda"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				<p:column headerText="Precio">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{venta.precio}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{venta.precio}" style="width:100%" label="Precio"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				<p:column>
+		           <p:rowEditor />
+		       	</p:column>
+		       	<p:column>
+		           <h:commandLink value="Delete" action="#{ventaController.eliminar(venta.id)}" />
+		       	</p:column>
+		       
+			</p:dataTable>
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34825" started-at="2019-06-25T06:07:35Z" finished-at="2019-06-25T06:08:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="34825" started-at="2019-06-25T06:07:35Z" finished-at="2019-06-25T06:08:10Z">
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage">
+        <test-method status="PASS" signature="inicioClase()[pri:0, instance:pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage@580929]" name="inicioClase" is-config="true" duration-ms="16900" started-at="2019-06-25T01:07:35Z" finished-at="2019-06-25T01:07:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicioClase -->
+        <test-method status="PASS" signature="editar_tienda_flujoBasico()[pri:0, instance:pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage@580929]" name="editar_tienda_flujoBasico" duration-ms="13301" started-at="2019-06-25T01:07:52Z" finished-at="2019-06-25T01:08:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar_tienda_flujoBasico -->
+        <test-method status="PASS" signature="eliminar_tienda_flujoBasico()[pri:0, instance:pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage@580929]" name="eliminar_tienda_flujoBasico" duration-ms="3496" started-at="2019-06-25T01:08:05Z" finished-at="2019-06-25T01:08:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminar_tienda_flujoBasico -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage@580929]" name="tearDown" is-config="true" duration-ms="1094" started-at="2019-06-25T01:08:09Z" finished-at="2019-06-25T01:08:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

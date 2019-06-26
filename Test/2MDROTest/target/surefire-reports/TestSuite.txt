@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 8, Errors: 0, Skipped: 2, Time elapsed: 134.939 sec <<< FAILURE! - in TestSuite
+insertarCategoria_FlujoAlternativo(pe.com.MDRO.test.system.selenium.testcase.MantenimientoCategoria)  Time elapsed: 2.255 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Descripcion: Error de validación: se necesita un valor.] but found [Descripcion: Validation Error: Value is required.]
+	at pe.com.MDRO.test.system.selenium.testcase.MantenimientoCategoria.insertarCategoria_FlujoAlternativo(MantenimientoCategoria.java:49)
+
+insertarCategoria_FlujoAlternativo(pe.com.MDRO.test.system.selenium.testcase.MantenimientoEtiqueta)  Time elapsed: 2.145 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Nombre: Error de validación: se necesita un valor.] but found [Nombre: Validation Error: Value is required.]
+	at pe.com.MDRO.test.system.selenium.testcase.MantenimientoEtiqueta.insertarCategoria_FlujoAlternativo(MantenimientoEtiqueta.java:42)
+
+insertarTienda_FlujoBasico(pe.com.MDRO.test.system.selenium.testcase.MantenimientoTienda)  Time elapsed: 32.916 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at pe.com.MDRO.test.system.selenium.testcase.MantenimientoTienda.insertarTienda_FlujoBasico(MantenimientoTienda.java:33)
+
+eliminar_categoria_flujoBasico(pe.com.MDRO.test.system.selenium.testcase.MListaCategoria)  Time elapsed: 30.234 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at pe.com.MDRO.test.system.selenium.testcase.MListaCategoria.eliminar_categoria_flujoBasico(MListaCategoria.java:44)
+
+editar_etiqueta_flujoBasico(pe.com.MDRO.test.system.selenium.testcase.MListaEtiqueta)  Time elapsed: 10.867 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at pe.com.MDRO.test.system.selenium.testcase.MListaEtiqueta.editar_etiqueta_flujoBasico(MListaEtiqueta.java:32)
+
+eliminar_etiqueta_flujoBasico(pe.com.MDRO.test.system.selenium.testcase.MListaEtiqueta)  Time elapsed: 6.024 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at pe.com.MDRO.test.system.selenium.testcase.MListaEtiqueta.eliminar_etiqueta_flujoBasico(MListaEtiqueta.java:44)
+
+editar_tienda_flujoBasico(pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage)  Time elapsed: 6.003 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage.editar_tienda_flujoBasico(MListaTiendaPage.java:32)
+
+eliminar_tienda_flujoBasico(pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage)  Time elapsed: 6.029 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage.eliminar_tienda_flujoBasico(MListaTiendaPage.java:44)
+

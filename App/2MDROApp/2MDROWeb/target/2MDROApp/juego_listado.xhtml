@@ -1,0 +1,67 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/templates/principal.xhtml">
+	<ui:define name="primaryTitle">Listado de Juegos</ui:define>
+	<ui:define name="content">
+		<div class="container">
+			<h:form id="form">
+			<p:messages id="mensaje" showDetail="true" closable="true">
+			        <p:autoUpdate />
+			</p:messages>
+			<p:dataTable value="#{juegoController.juegos}" 
+							var="juego"
+							editable="true">
+				<p:ajax event="rowEdit" listener="#{juegoController.onRowEdit}" update=":form:mensaje" />
+       			<p:ajax event="rowEditCancel" listener="#{juegoController.onRowCancel}" update=":form:mensaje" />
+       			
+				<p:column headerText="ID">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{juego.id}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{juego.id}" style="width:100%"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				<p:column headerText="Nombre">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{juego.nombre}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{juego.nombre}" style="width:100%" label="Nombre"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				
+				<p:column headerText="Plataforma">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{juego.plataforma}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{juego.plataforma}" style="width:100%" label="Plataforma"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				
+				<p:column headerText="Categoria">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{juego.categoria.nombre}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{juego.categoria.nombre}" style="width:100%" label="Categoria"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				
+				<p:column headerText="Biblioteca">
+					<p:cellEditor>
+		               <f:facet name="output"><h:outputText value="#{juego.biblioteca.nombre}" /></f:facet>
+		               <f:facet name="input"><p:inputText value="#{juego.biblioteca.nombre}" style="width:100%" label="Biblioteca"/></f:facet>
+		           </p:cellEditor>
+				</p:column>
+				<p:column>
+		           <p:rowEditor />
+		       	</p:column>
+		       	<p:column>
+		           <h:commandLink value="Delete" action="#{juegoController.eliminar(juego.id)}" />
+		       	</p:column>
+		       
+			</p:dataTable>
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

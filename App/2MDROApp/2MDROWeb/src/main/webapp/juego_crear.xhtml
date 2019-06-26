@@ -1,0 +1,65 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+      
+<ui:composition template="/WEB-INF/templates/principal.xhtml">
+	<ui:define name="primaryTitle">Crear Juego</ui:define>
+	<ui:define name="content">
+          <div class="container">
+          <h:form>
+          		<p:messages id="mensaje" showDetail="true" closable="true">
+			        <p:autoUpdate />
+			    </p:messages>
+				<div class="form-group row">
+	                <p:outputLabel for="nombre" value="Nombre" class="col-sm-2 col-form-label"></p:outputLabel>
+	                <div class="col-sm-10">
+	                	<p:inputText id="nombre" class="form-control" value="#{juegoController.juego.nombre}" required="true" placeholder="Ingresar nombre"></p:inputText>
+	                	<p:message for="nombre" display="text" />
+	                </div>
+	                <p:outputLabel for="plataforma" value="Plataforma" class="col-sm-2 col-form-label"></p:outputLabel>
+	                <div class="col-sm-10">
+	                	<p:inputText id="plataforma" class="form-control" value="#{juegoController.juego.plataforma}" required="true" placeholder="Ingresar plataforma"></p:inputText>
+	                	<p:message for="plataforma" display="text" />
+	                </div>
+	                <p:outputLabel for="descripcion" value="Descripcion" class="col-sm-2 col-form-label"></p:outputLabel>
+	                <div class="col-sm-10">
+	                	<p:inputText id="descripcion" class="form-control" value="#{juegoController.juego.descripcion}" required="true" placeholder="Ingresar descripcion"></p:inputText>
+	                	<p:message for="descripcion" display="text" />
+	                </div>
+				</div>	
+				<div class="form-group row">
+				 	 <p:outputLabel for="categoria" value="Categoria" class="col-sm-2 col-form-label"></p:outputLabel>
+	                <div class="col-sm-10">
+	                	<p:selectOneMenu id="categoria"  value="#{juegoController.categoria}" style="width:160px" converter="omnifaces.SelectItemsConverter">
+	                	<f:selectItem itemLabel="seleccionar" itemValue="" />
+							<f:selectItems value="#{juegoController.categorias}"
+								var="e" itemLabel="#{e.nombre}" itemValue="#{e.id}" />
+	                	</p:selectOneMenu>
+ 						<p:message for="categoria" display="text" />
+	                </div>
+	               
+	                <p:outputLabel for="biblioteca" value="Biblioteca" class="col-sm-2 col-form-label"></p:outputLabel>
+	                <div class="col-sm-10">
+	                	<p:selectOneMenu id="biblioteca" style="width:160px" value="#{juegoController.biblioteca}" converter="omnifaces.SelectItemsConverter">
+	                	<f:selectItem itemLabel="seleccionar" itemValue="" />
+							<f:selectItems value="#{juegoController.bibliotecas}"
+								var="e" itemLabel="#{e.nombre}" itemValue="#{e.id}" />
+	                	</p:selectOneMenu>
+ 						<p:message for="biblioteca" display="text" />
+	                </div>
+				</div>			
+				<div class="form-group row">
+					<p:outputLabel class="col-sm-2 col-form-label"></p:outputLabel>
+	                <div class="col-sm-10">
+	                  <p:commandButton update="mensaje" class="btn btn-primary" value="Guardar" action="#{juegoController.guardar()}"></p:commandButton>
+	                </div>
+	            </div>
+			</h:form>
+          </div>
+	</ui:define>
+</ui:composition>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head></h:head> 
+<body> 
+<ui:composition>
+<h:form>
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Categorias</span>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              	<li class="nav-item">
+                	<p:link outcome="categoria_crear.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Crear categoria
+                	</p:link>
+                </li>
+                <li class="nav-item">
+                	<p:link outcome="categoria_listado.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Listar categorias
+                	</p:link>
+                </li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Etiquetas</span>
+            </h6>
+            <ul class="nav flex-column mb-2">
+            	<li class="nav-item">
+                	<p:link outcome="etiqueta_crear.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Crear etiquetas
+                	</p:link>
+                </li>
+              	<li class="nav-item">
+                	<p:link outcome="etiqueta_listado.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Listar etiquetas
+                	</p:link>
+                </li>
+            </ul>
+            
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Juegos</span>
+            </h6>
+            <ul class="nav flex-column mb-2">
+            	<li class="nav-item">
+                	<p:link outcome="juego_crear.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Crear juegos
+                	</p:link>
+                </li>
+              	<li class="nav-item">
+                	<p:link outcome="juego_listado.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Listar juegos
+                	</p:link>
+                </li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Tiendas</span>
+            </h6>
+            <ul class="nav flex-column mb-2">
+            	<li class="nav-item">
+                	<p:link outcome="tienda_crear.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Crear tiendas
+                	</p:link>
+                </li>
+              	<li class="nav-item">
+                	<p:link outcome="tienda_listado.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Listar tiendas
+                	</p:link>
+                </li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Etiqueta en Juego</span>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              	<li class="nav-item">
+                	<p:link outcome="etiquetaporjuego_crear.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Crear etiqueta en juego
+                	</p:link>
+                </li>
+                <li class="nav-item">
+                	<p:link outcome="etiquetaporjuego_listado.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Listar etiqueta en juegos
+                	</p:link>
+                </li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Ventas</span>
+            </h6>
+            <ul class="nav flex-column mb-2">
+            	<li class="nav-item">
+                	<p:link outcome="venta_crear.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Crear ventas
+                	</p:link>
+                </li>
+              	<li class="nav-item">
+                	<p:link outcome="venta_listado.xhtml" styleClass="nav-link">
+                		<span data-feather="chevron-right"></span>Listar ventas
+                	</p:link>
+                </li>
+            </ul>
+          </div>
+</nav>
+</h:form>
+</ui:composition>
+</body> 
+</html>

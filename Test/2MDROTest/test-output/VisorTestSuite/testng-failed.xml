@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [VisorTestSuite]">
+  <test name="MantenimientoCategoriaTest">
+    <classes>
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoCategoria"/>
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoEtiqueta"/>
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoTienda"/>
+    </classes>
+  </test> <!-- MantenimientoCategoriaTest -->
+  <test name="MantenimientoCategoriaTest(failed)">
+    <classes>
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoCategoria">
+        <methods>
+          <include name="tearDown"/>
+          <include name="inicioClase"/>
+          <include name="insertarCategoria_FlujoBasico"/>
+          <include name="insertarCategoria_FlujoAlternativo"/>
+        </methods>
+      </class> <!-- pe.com.MDRO.test.system.selenium.testcase.MantenimientoCategoria -->
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoTienda">
+        <methods>
+          <include name="tearDown"/>
+          <include name="inicioClase"/>
+        </methods>
+      </class> <!-- pe.com.MDRO.test.system.selenium.testcase.MantenimientoTienda -->
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoEtiqueta">
+        <methods>
+          <include name="insertarEtiqueta_FlujoBasico"/>
+          <include name="inicioClase"/>
+          <include name="tearDown"/>
+          <include name="insertarCategoria_FlujoAlternativo"/>
+        </methods>
+      </class> <!-- pe.com.MDRO.test.system.selenium.testcase.MantenimientoEtiqueta -->
+    </classes>
+  </test> <!-- MantenimientoCategoriaTest(failed) -->
+</suite> <!-- Failed suite [VisorTestSuite] -->

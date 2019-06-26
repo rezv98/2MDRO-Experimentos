@@ -1,0 +1,1022 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Registrar Biblioteca",
+        "description": "",
+        "id": "mantenimiento-de-biblioteca;registrar-biblioteca",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3156467478,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "despues de iniciar sesion en la aplicacion",
+            "match": {
+              "location": "BibliotecaIntegration.despues_de_iniciar_sesion_en_la_aplicacion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 71884,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "hago click en el enlace de Mantenimiento de Biblioteca",
+            "match": {
+              "location": "BibliotecaIntegration.hago_click_en_el_enlace_de_Mantenimiento_de_Biblioteca()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64464,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "hago click en el boton nuevo",
+            "match": {
+              "location": "BibliotecaIntegration.hago_click_en_el_boton_nuevo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1528580,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "en la nueva pantalla escribo en el campo Nombre el valor de \"Pedrito\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pedrito",
+                  "offset": 61
+                }
+              ],
+              "location": "BibliotecaIntegration.en_la_nueva_pantalla_escribo_en_el_campo_Nombre_el_valor_de(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33312000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "presiono el boton de Guardar",
+            "match": {
+              "location": "BibliotecaIntegration.presiono_el_boton_de_Guardar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56116,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "el sistema me muestra el mensaje de: \"Se guardo correctamente la Biblioteca\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Se guardo correctamente la Biblioteca",
+                  "offset": 38
+                }
+              ],
+              "location": "BibliotecaIntegration.el_sistema_me_muestra_el_mensaje_de_(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Actualizar Biblioteca",
+        "description": "",
+        "id": "mantenimiento-de-biblioteca;actualizar-biblioteca",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 300985,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "despues de iniciar sesion en la aplicacion",
+            "match": {
+              "location": "BibliotecaIntegration.despues_de_iniciar_sesion_en_la_aplicacion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 97855,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "hago click en el enlace de Mantenimiento de Biblioteca",
+            "match": {
+              "location": "BibliotecaIntegration.hago_click_en_el_enlace_de_Mantenimiento_de_Biblioteca()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82068406,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "busco la Biblioteca \"Pedrito\" para seleccionarlo de la tabla de Biblioteca",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pedrito",
+                  "offset": 21
+                }
+              ],
+              "location": "BibliotecaIntegration.busco_el_Biblioteca_para_seleccionarlo_de_la_tabla_de_Biblioteca(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60753,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "luego hago click en el boton Editar",
+            "match": {
+              "location": "BibliotecaIntegration.luego_hago_click_en_el_boton_Editar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32927,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "en la nueva pantalla escribo en el campo Nombre el valor de \"Pepito\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pepito",
+                  "offset": 61
+                }
+              ],
+              "location": "BibliotecaIntegration.en_la_nueva_pantalla_escribo_en_el_campo_Nombre_el_valor_de(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12936348,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "presiono el boton de Actualizar",
+            "match": {
+              "location": "BibliotecaIntegration.presiono_el_boton_de_Actualizar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35710,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "el sistema me muestra el mensaje de: \"Se actualizo correctamente la Biblioteca\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Se actualizo correctamente la Biblioteca",
+                  "offset": 38
+                }
+              ],
+              "location": "BibliotecaIntegration.el_sistema_me_muestra_el_mensaje_de_(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Mantenimiento de Biblioteca",
+    "description": "Como administrador necesito realizar la gestion de Biblioteca",
+    "id": "mantenimiento-de-biblioteca",
+    "keyword": "Feature",
+    "uri": "Biblioteca.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Registrar Categoria",
+        "description": "",
+        "id": "mantenimiento-de-categor�a;registrar-categoria",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 287536,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "despues de iniciar sesion en la aplicacion",
+            "match": {
+              "location": "BibliotecaIntegration.despues_de_iniciar_sesion_en_la_aplicacion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1394087,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "hago click en el enlace de Mantenimiento de Categoria",
+            "match": {
+              "location": "CategoriaIntegration.hago_click_en_el_enlace_de_Mantenimiento_de_Categoria()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73739,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "hago click en el boton nuevo de Categoria",
+            "match": {
+              "location": "CategoriaIntegration.hago_click_en_el_boton_nuevo_de_Categoria()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51015,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "en la nueva pantalla escribo en el campo Nombre el valor de \"Multiplayer\" de la categoria",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Multiplayer",
+                  "offset": 61
+                }
+              ],
+              "location": "CategoriaIntegration.en_la_nueva_pantalla_escribo_en_el_campo_Nombre_el_valor_de_la_categoria(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70029,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "en la nueva pantalla escribo en el campo Descripcion el valor de \"Juegos de 2 a mas jugadores\" de la categoria",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Juegos de 2 a mas jugadores",
+                  "offset": 66
+                }
+              ],
+              "location": "CategoriaIntegration.en_la_nueva_pantalla_escribo_en_el_campo_Descripcion_el_valor_de_la_categoria(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5917217,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "presiono el boton de Guardar de Categoria",
+            "match": {
+              "location": "CategoriaIntegration.presiono_el_boton_de_Guarda_de_Categoriar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47768,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "el sistema me muestra el mensaje de: \"Se guardo correctamente\" la categoria",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Se guardo correctamente",
+                  "offset": 38
+                }
+              ],
+              "location": "CategoriaIntegration.el_sistema_me_muestra_el_mensaje_de_(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Actualizar Categoria",
+        "description": "",
+        "id": "mantenimiento-de-categor�a;actualizar-categoria",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 224000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "despues de iniciar sesion en la aplicacion",
+            "match": {
+              "location": "BibliotecaIntegration.despues_de_iniciar_sesion_en_la_aplicacion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 198957,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "hago click en el enlace de Mantenimiento de Categoria",
+            "match": {
+              "location": "CategoriaIntegration.hago_click_en_el_enlace_de_Mantenimiento_de_Categoria()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3813566,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "busco la categoria \"Multiplayer\" para seleccionarlo de la tabla de Categorias",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Multiplayer",
+                  "offset": 20
+                }
+              ],
+              "location": "CategoriaIntegration.busco_la_categoria_para_seleccionarlo_de_la_tabla_de_Categoria(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70493,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "luego hago click en el boton Editar de Categoria",
+            "match": {
+              "location": "CategoriaIntegration.luego_hago_click_en_el_boton_Editar_de_Categoria()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43595,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "en la nueva pantalla escribo en el campo Descripcion el valor de \"Juego de muchos jugadores a la vez\" de la categoria",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Juego de muchos jugadores a la vez",
+                  "offset": 66
+                }
+              ],
+              "location": "CategoriaIntegration.en_la_nueva_pantalla_escribo_en_el_campo_Descripcion_el_valor_de_la_categoria(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7395710,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "presiono el boton de Actualizar de Categoria",
+            "match": {
+              "location": "CategoriaIntegration.presiono_el_boton_de_Actualizar_de_Categoria()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39420,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "el sistema me muestra el mensaje de: \"Se actualizo correctamente\" la categoria",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Se actualizo correctamente",
+                  "offset": 38
+                }
+              ],
+              "location": "CategoriaIntegration.el_sistema_me_muestra_el_mensaje_de_(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Mantenimiento de Categor�a",
+    "description": "Como administrador necesito realizar la gestion de Categorias",
+    "id": "mantenimiento-de-categor�a",
+    "keyword": "Feature",
+    "uri": "Categoria.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Registrar Juego",
+        "description": "",
+        "id": "mantenimiento-de-juego;registrar-juego",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 261566,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "despues de iniciar sesion en la aplicacion",
+            "match": {
+              "location": "BibliotecaIntegration.despues_de_iniciar_sesion_en_la_aplicacion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1743304,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "despues de ir al modulo de biblioteca",
+            "match": {
+              "location": "JuegoIntegration.despues_de_haber_seleccionado_una_biblioteca()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4111304,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "selecciono la primera biblioteca",
+            "match": {
+              "location": "JuegoIntegration.selecciono_la_primera_biblioteca()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102029,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "hago click en el boton nuevo de Juego",
+            "match": {
+              "location": "JuegoIntegration.hago_click_en_el_boton_nuevo_de_Juego()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3663768,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "selecciono la primera categoria",
+            "match": {
+              "location": "JuegoIntegration.selecciono_la_primera_categoria()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65391,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "en la nueva pantalla escribo en el campo Nombre el valor de \"Mortal Kombat\" del Juego",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mortal Kombat",
+                  "offset": 61
+                }
+              ],
+              "location": "JuegoIntegration.en_la_nueva_pantalla_escribo_en_el_campo_Nombre_el_valor_de(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41276,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "en la nueva pantalla escribo en el campo Descripcion el valor de \"Salva el mundo intentado vencer en este combate mortal\" del Juego",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Salva el mundo intentado vencer en este combate mortal",
+                  "offset": 66
+                }
+              ],
+              "location": "JuegoIntegration.en_la_nueva_pantalla_escribo_en_el_campo_Descripcion_el_valor_de(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38956,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "en la nueva pantalla escribo en el campo Plataforma el valor de \"PC/XBOX/PS4\" del Juego",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PC/XBOX/PS4",
+                  "offset": 65
+                }
+              ],
+              "location": "JuegoIntegration.en_la_nueva_pantalla_escribo_en_el_campo_Plataforma_el_valor_de(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6415768,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "presiono el boton Guardar de Juego",
+            "match": {
+              "location": "JuegoIntegration.presiono_el_boton_Guardar_de_Juego()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51942,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "el sistema me muestra el mensaje de: \"Se guardo correctamente\" el juego",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Se guardo correctamente",
+                  "offset": 38
+                }
+              ],
+              "location": "JuegoIntegration.el_sistema_me_muestra_el_mensaje_de_el_juego(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Actualizar Juego",
+        "description": "",
+        "id": "mantenimiento-de-juego;actualizar-juego",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 260638,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "despues de iniciar sesion en la aplicacion",
+            "match": {
+              "location": "BibliotecaIntegration.despues_de_iniciar_sesion_en_la_aplicacion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 189217,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "despues de ir al modulo de biblioteca",
+            "match": {
+              "location": "JuegoIntegration.despues_de_haber_seleccionado_una_biblioteca()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1873623,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "selecciono la primera biblioteca",
+            "match": {
+              "location": "JuegoIntegration.selecciono_la_primera_biblioteca()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3176812,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "busco el juego \"Mortal Kombat\" para seleccionarlo de la tabla de Juegos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mortal Kombat",
+                  "offset": 16
+                }
+              ],
+              "location": "JuegoIntegration.busco_el_juego_para_seleccionarlo_de_la_tabla_de_Juegos(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69566,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "luego hago click en el boton Editar de Juego",
+            "match": {
+              "location": "JuegoIntegration.luego_hago_click_en_el_boton_Editar_de_Juego()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49623,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "en la nueva pantalla escribo en el campo Plataforma el valor de \"Nintendo/Gameboy/XBOXONE\" del Juego",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nintendo/Gameboy/XBOXONE",
+                  "offset": 65
+                }
+              ],
+              "location": "JuegoIntegration.en_la_nueva_pantalla_escribo_en_el_campo_Plataforma_el_valor_de(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6929160,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "presiono el boton Actualizar de Juego",
+            "match": {
+              "location": "JuegoIntegration.presiono_el_boton_Actualizar_de_Juego()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36638,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "el sistema me muestra el mensaje de: \"Se actualizo correctamente\" el juego",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Se actualizo correctamente",
+                  "offset": 38
+                }
+              ],
+              "location": "JuegoIntegration.el_sistema_me_muestra_el_mensaje_de_el_juego(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Mantenimiento de Juego",
+    "description": "Como administrador necesito realizar la gestion de Juegos",
+    "id": "mantenimiento-de-juego",
+    "keyword": "Feature",
+    "uri": "Juego.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Registrar Tiendas",
+        "description": "",
+        "id": "mantenimiento-de-tienda;registrar-tiendas",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 358957,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "despues de iniciar sesion en la aplicacion",
+            "match": {
+              "location": "BibliotecaIntegration.despues_de_iniciar_sesion_en_la_aplicacion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1817508,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "hago click en el enlace de Mantenimiento de Tiendas",
+            "match": {
+              "location": "TiendaIntegration.hago_click_en_el_enlace_de_Mantenimiento_de_Tiendas()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69101,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "hago click en el boton nuevo de Tienda",
+            "match": {
+              "location": "TiendaIntegration.hago_click_en_el_boton_nuevo_de_Tienda()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63073,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "en la nueva pantalla escribo en el campo Nombre el valor de \"Activision\" de Tienda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Activision",
+                  "offset": 61
+                }
+              ],
+              "location": "TiendaIntegration.en_la_nueva_pantalla_escribo_en_el_campo_Nombre_el_valor_de_Tienda(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43594,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "en la nueva pantalla escribo en el campo url el valor de \"https://www.Activision.com/WOW\" de Tienda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.Activision.com/WOW",
+                  "offset": 58
+                }
+              ],
+              "location": "TiendaIntegration.en_la_nueva_pantalla_escribo_en_el_campo_url_el_valor_de_Tienda(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6512695,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "presiono el boton Guardar de Tienda",
+            "match": {
+              "location": "TiendaIntegration.presiono_el_boton_de_Guardar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54261,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "el sistema me muestra el mensaje de: \"Se guardo correctamente\" la tienda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Se guardo correctamente",
+                  "offset": 38
+                }
+              ],
+              "location": "TiendaIntegration.el_sistema_me_muestra_el_mensaje_de_(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Actualizar Tienda",
+        "description": "",
+        "id": "mantenimiento-de-tienda;actualizar-tienda",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 240696,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "despues de iniciar sesion en la aplicacion",
+            "match": {
+              "location": "BibliotecaIntegration.despues_de_iniciar_sesion_en_la_aplicacion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 226782,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "hago click en el enlace de Mantenimiento de Tiendas",
+            "match": {
+              "location": "TiendaIntegration.hago_click_en_el_enlace_de_Mantenimiento_de_Tiendas()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4244406,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "busco la tienda \"Activision\" para seleccionarlo de la tabla de Tiendas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Activision",
+                  "offset": 17
+                }
+              ],
+              "location": "TiendaIntegration.busco_la_tienda_para_seleccionarlo_de_la_tabla_de_Tiendas(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151653,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "luego hago click en el boton Editar de Tienda",
+            "match": {
+              "location": "TiendaIntegration.luego_hago_click_en_el_boton_Editar_de_Tienda()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36638,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "en la nueva pantalla escribo en el campo url el valor de \"https://www.Activision.com/backyardigansgame\" de Tienda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.Activision.com/backyardigansgame",
+                  "offset": 58
+                }
+              ],
+              "location": "TiendaIntegration.en_la_nueva_pantalla_escribo_en_el_campo_url_el_valor_de_Tienda(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6861913,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "presiono el boton Actualizar de Tienda",
+            "match": {
+              "location": "TiendaIntegration.presiono_el_boton_de_Actualizar_Tienda()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38029,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "el sistema me muestra el mensaje de: \"Se actualizo correctamente\" la tienda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Se actualizo correctamente",
+                  "offset": 38
+                }
+              ],
+              "location": "TiendaIntegration.el_sistema_me_muestra_el_mensaje_de_(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Mantenimiento de Tienda",
+    "description": "Como administrador necesito realizar la gestion de Tiendas",
+    "id": "mantenimiento-de-tienda",
+    "keyword": "Feature",
+    "uri": "Tienda.feature"
+  }
+]

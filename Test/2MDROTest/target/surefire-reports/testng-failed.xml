@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [VisorTestSuite]">
+  <test thread-count="5" verbose="0" name="MantenimientoCategoriaTest(failed)">
+    <classes>
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoTienda">
+        <methods>
+          <include name="insertarTienda_FlujoAlternativo"/>
+          <include name="insertarTienda_FlujoBasico"/>
+          <include name="tearDown"/>
+          <include name="inicioClase"/>
+          <include name="insertarTienda_FlujoAlternativo2"/>
+        </methods>
+      </class> <!-- pe.com.MDRO.test.system.selenium.testcase.MantenimientoTienda -->
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoEtiqueta">
+        <methods>
+          <include name="insertarEtiqueta_FlujoBasico"/>
+          <include name="inicioClase"/>
+          <include name="tearDown"/>
+          <include name="insertarCategoria_FlujoAlternativo"/>
+        </methods>
+      </class> <!-- pe.com.MDRO.test.system.selenium.testcase.MantenimientoEtiqueta -->
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoCategoria">
+        <methods>
+          <include name="tearDown"/>
+          <include name="inicioClase"/>
+          <include name="insertarCategoria_FlujoBasico"/>
+          <include name="insertarCategoria_FlujoAlternativo"/>
+        </methods>
+      </class> <!-- pe.com.MDRO.test.system.selenium.testcase.MantenimientoCategoria -->
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MListaCategoria">
+        <methods>
+          <include name="inicioClase"/>
+          <include name="tearDown"/>
+          <include name="eliminar_categoria_flujoBasico"/>
+        </methods>
+      </class> <!-- pe.com.MDRO.test.system.selenium.testcase.MListaCategoria -->
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MListaEtiqueta">
+        <methods>
+          <include name="editar_etiqueta_flujoBasico"/>
+          <include name="eliminar_etiqueta_flujoBasico"/>
+          <include name="inicioClase"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pe.com.MDRO.test.system.selenium.testcase.MListaEtiqueta -->
+      <class name="pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="eliminar_tienda_flujoBasico"/>
+          <include name="editar_tienda_flujoBasico"/>
+          <include name="inicioClase"/>
+        </methods>
+      </class> <!-- pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage -->
+    </classes>
+  </test> <!-- MantenimientoCategoriaTest(failed) -->
+</suite> <!-- Failed suite [VisorTestSuite] -->

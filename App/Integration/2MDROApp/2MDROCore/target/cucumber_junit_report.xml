@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="3.35646">
+<testcase classname="Mantenimiento de Biblioteca" name="Registrar Biblioteca" time="3.191501">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago click en el enlace de Mantenimiento de Biblioteca.................passed
+And hago click en el boton nuevo............................................passed
+And en la nueva pantalla escribo en el campo Nombre el valor de "Pedrito"...passed
+And presiono el boton de Guardar............................................passed
+Then el sistema me muestra el mensaje de: "Se guardo correctamente la Biblioteca".passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Biblioteca" name="Actualizar Biblioteca" time="0.095533">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago click en el enlace de Mantenimiento de Biblioteca.................passed
+And busco la Biblioteca "Pedrito" para seleccionarlo de la tabla de Biblioteca.passed
+And luego hago click en el boton Editar.....................................passed
+And en la nueva pantalla escribo en el campo Nombre el valor de "Pepito"....passed
+And presiono el boton de Actualizar.........................................passed
+Then el sistema me muestra el mensaje de: "Se actualizo correctamente la Biblioteca".passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Categor�a" name="Registrar Categoria" time="0.007841">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago click en el enlace de Mantenimiento de Categoria..................passed
+And hago click en el boton nuevo de Categoria...............................passed
+And en la nueva pantalla escribo en el campo Nombre el valor de "Multiplayer" de la categoria.passed
+And en la nueva pantalla escribo en el campo Descripcion el valor de "Juegos de 2 a mas jugadores" de la categoria.passed
+And presiono el boton de Guardar de Categoria...............................passed
+Then el sistema me muestra el mensaje de: "Se guardo correctamente" la categoria.passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Categor�a" name="Actualizar Categoria" time="0.011786">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago click en el enlace de Mantenimiento de Categoria..................passed
+And busco la categoria "Multiplayer" para seleccionarlo de la tabla de Categorias.passed
+And luego hago click en el boton Editar de Categoria........................passed
+And en la nueva pantalla escribo en el campo Descripcion el valor de "Juego de muchos jugadores a la vez" de la categoria.passed
+And presiono el boton de Actualizar de Categoria............................passed
+Then el sistema me muestra el mensaje de: "Se actualizo correctamente" la categoria.passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Juego" name="Registrar Juego" time="0.016495">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+Given despues de ir al modulo de biblioteca.................................passed
+When selecciono la primera biblioteca.......................................passed
+And hago click en el boton nuevo de Juego...................................passed
+And selecciono la primera categoria.........................................passed
+And en la nueva pantalla escribo en el campo Nombre el valor de "Mortal Kombat" del Juego.passed
+And en la nueva pantalla escribo en el campo Descripcion el valor de "Salva el mundo intentado vencer en este combate mortal" del Juego.passed
+And en la nueva pantalla escribo en el campo Plataforma el valor de "PC/XBOX/PS4" del Juego.passed
+And presiono el boton Guardar de Juego......................................passed
+Then el sistema me muestra el mensaje de: "Se guardo correctamente" el juego.passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Juego" name="Actualizar Juego" time="0.012585">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+Given despues de ir al modulo de biblioteca.................................passed
+When selecciono la primera biblioteca.......................................passed
+And busco el juego "Mortal Kombat" para seleccionarlo de la tabla de Juegos.passed
+And luego hago click en el boton Editar de Juego............................passed
+And en la nueva pantalla escribo en el campo Plataforma el valor de "Nintendo/Gameboy/XBOXONE" del Juego.passed
+And presiono el boton Actualizar de Juego...................................passed
+Then el sistema me muestra el mensaje de: "Se actualizo correctamente" el juego.passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Tienda" name="Registrar Tiendas" time="0.008919">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago click en el enlace de Mantenimiento de Tiendas....................passed
+And hago click en el boton nuevo de Tienda..................................passed
+And en la nueva pantalla escribo en el campo Nombre el valor de "Activision" de Tienda.passed
+And en la nueva pantalla escribo en el campo url el valor de "https://www.Activision.com/WOW" de Tienda.passed
+And presiono el boton Guardar de Tienda.....................................passed
+Then el sistema me muestra el mensaje de: "Se guardo correctamente" la tienda.passed
+]]></system-out>
+</testcase>
+<testcase classname="Mantenimiento de Tienda" name="Actualizar Tienda" time="0.0118">
+<system-out><![CDATA[Given despues de iniciar sesion en la aplicacion............................passed
+When hago click en el enlace de Mantenimiento de Tiendas....................passed
+And busco la tienda "Activision" para seleccionarlo de la tabla de Tiendas..passed
+And luego hago click en el boton Editar de Tienda...........................passed
+And en la nueva pantalla escribo en el campo url el valor de "https://www.Activision.com/backyardigansgame" de Tienda.passed
+And presiono el boton Actualizar de Tienda..................................passed
+Then el sistema me muestra el mensaje de: "Se actualizo correctamente" la tienda.passed
+]]></system-out>
+</testcase>
+</testsuite>
