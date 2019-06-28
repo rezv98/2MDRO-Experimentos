@@ -33,7 +33,7 @@ public class MListaTiendaPage {
 		}
 	}
 	
-	@Test
+	/*@Test
 	public void eliminar_tienda_flujoBasico() throws Exception{
 		try {
 			String valorEsperado = "Tienda eliminada";
@@ -43,7 +43,7 @@ public class MListaTiendaPage {
 			e.printStackTrace();
 			Assert.fail();
 		}
-	}
+	}*/
 	
 	@AfterTest
 	public void tearDown() throws Exception {

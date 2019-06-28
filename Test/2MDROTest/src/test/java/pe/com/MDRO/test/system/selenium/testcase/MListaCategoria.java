@@ -33,7 +33,7 @@ public class MListaCategoria {
 		}
 	}
 	
-	@Test
+	/*@Test
 	public void eliminar_categoria_flujoBasico() throws Exception{
 		try {
 			String valorEsperado = "Categoría eliminada";
@@ -43,7 +43,7 @@ public class MListaCategoria {
 			e.printStackTrace();
 			Assert.fail();
 		}
-	}
+	}*/
 	
 	@AfterTest
 	public void tearDown() throws Exception {

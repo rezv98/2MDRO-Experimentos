@@ -5,7 +5,7 @@
 		<classes>
 			<class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoCategoria" />
 			<class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoEtiqueta" />
-			<class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoTienda" />
+		<!-- 	<class name="pe.com.MDRO.test.system.selenium.testcase.MantenimientoTienda" /> -->
 			<class name="pe.com.MDRO.test.system.selenium.testcase.MListaCategoria" />
 			<class name="pe.com.MDRO.test.system.selenium.testcase.MListaEtiqueta" />
 			<class name="pe.com.MDRO.test.system.selenium.testcase.MListaTiendaPage" />

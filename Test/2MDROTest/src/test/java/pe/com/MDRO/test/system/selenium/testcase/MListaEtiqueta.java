@@ -33,17 +33,17 @@ public class MListaEtiqueta {
 		}
 	}
 	
-	@Test
+	/*@Test
 	public void eliminar_etiqueta_flujoBasico() throws Exception{
 		try {
 			String valorEsperado = "Etiqueta eliminada";
 			String valorObtenido = listaetipage.eliminar();
-			Assert.assertEquals(valorObtenido, valorEsperado);
+			Assert.assertEq	uals(valorObtenido, valorEsperado);
 		} catch (Exception e) {
 			e.printStackTrace();
 			Assert.fail();
 		}
-	}
+	}*/
 	
 	@AfterTest
 	public void tearDown() throws Exception {
