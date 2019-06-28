@@ -34,7 +34,7 @@ public class MantenimientoEtiqueta {
 		}
 	}
 	
-	@Test(dependsOnMethods = {"insertarEtiqueta_FlujoBasico"})
+	/*@Test(dependsOnMethods = {"insertarEtiqueta_FlujoBasico"})
 	public void insertarCategoria_FlujoAlternativo() throws Exception {
 		try {
 			String valorEsperado = "Nombre: Error de validación: se necesita un valor.";
@@ -44,7 +44,7 @@ public class MantenimientoEtiqueta {
 			e.printStackTrace();
 			Assert.fail();
 		}
-	}
+	}*/
 	
 	@AfterTest
 	public void tearDown() throws Exception {
